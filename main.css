@@ -1,91 +1,164 @@
-body {
-	margin: 0;
-	background-color: #000;
-	color: #fff;
-	font-family: Monospace;
-	font-size: 13px;
-	line-height: 24px;
-	overscroll-behavior: none;
-}
-
-a {
-	color: #ff0;
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-button {
-	cursor: pointer;
-	text-transform: uppercase;
-}
-
-#info {
+main {
+	color: black;
+	z-index: 99;
 	position: absolute;
-	top: 0px;
 	width: 100%;
-	padding: 10px;
-	box-sizing: border-box;
-	text-align: center;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	pointer-events: none;
-	z-index: 1; /* TODO Solve this in HTML */
+	margin: 0px auto;
+	padding: 120px 0px;
 }
 
-a, button, input, select {
-	pointer-events: auto;
-}
-
-.lil-gui {
-	z-index: 2 !important; /* TODO Solve this in HTML */
-}
-
-@media all and ( max-width: 640px ) {
-	.lil-gui.root { 
-		right: auto;
-		top: auto;
-		max-height: 50%;
-		max-width: 80%;
-		bottom: 0;
-		left: 0;
-	}
-}
-
-#overlay {
-	position: absolute;
-	font-size: 16px;
-	z-index: 2;
+canvas {
+	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	background: rgba(0,0,0,0.7);
 }
 
-	#overlay button {
-		background: transparent;
-		border: 0;
-		border: 1px solid rgb(255, 255, 255);
-		border-radius: 4px;
-		color: #ffffff;
-		padding: 12px 18px;
-		text-transform: uppercase;
-		cursor: pointer;
-	}
+body {
+	background: black;
+	object-fit: contain;
+	overflow-x: hidden;
+}
 
-#notSupported {
-	width: 50%;
-	margin: auto;
-	background-color: #f00;
-	margin-top: 20px;
-	padding: 10px;
+header {
+	padding-top: 10px;
+}
+
+.navbar {
+	padding-bottom: 10px;
+}
+
+.navbar-header {
+	float: left;
+	padding: 15px;
+	text-align: center;
+	width: 100%;
+}
+
+.navbar-social {
+	position: relative;
+	float: right;
+	padding-right: 50px;
+	padding-bottom: -150px;
+}
+
+.navbar-brand {
+	font-size: 18px;
+	color: whitesmoke;
+	font-family: "Varela Round";
+	text-decoration-line: line-through;
+	padding-left: 180px;
+	cursor: none;
+}
+
+.navbar-brand {
+	float: none;
+}
+
+.navbar-header a:hover {
+	text-decoration-line: none;
+	color: #ef8354;
+}
+
+.nav-item a {
+	color: whitesmoke;
+}
+
+.nav-link {
+	font-size: 14px;
+	font-family: Monaco, "Lucida Console", monospace;
+	padding-bottom: 25px;
+	font-weight: bold;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+span {
+	color: #f9faf4;
+}
+
+.nav-item a:hover {
+	color: #ef8354;
+	text-decoration-line: line-through;
+	/*font-size: 16px;*/
+}
+
+.active a {
+	color: #ef8354 !important;
+}
+
+footer {
+	color: white;
+	opacity: 60%;
+	text-align: center;
+	width: 100%;
+	font-size: 12px;
+	font-family: "Varela Round";
+	background-color: black;
+	padding-bottom: 10px;
+}
+
+p {
+	position: relative;
+	font-size: 25px;
+	color: white;
+	float: left;
+	padding-top: 50px;
+	text-align: center;
+	width: 100%;
+	font-family: "Varela Round";
+}
+
+.social-part i {
+	padding-left: 25px;
+	margin-top: 10px;
+}
+
+.social-part i:hover {
+	cursor: none;
+}
+
+.fa-github {
+	color: whitesmoke;
+}
+
+.fa-pinterest {
+	color: whitesmoke;
+}
+
+.fa-instagram {
+	color: whitesmoke;
+}
+
+.fa-behance {
+	color: whitesmoke;
+}
+
+.fa-github:hover {
+	color: #ef8354;
+}
+
+.fa-pinterest:hover {
+	color: #ef8354;
+}
+
+.fa-instagram:hover {
+	color: #ef8354;
+}
+
+.fa-behance:hover {
+	color: #ef8354;
+}
+
+.mainImg {
+	height: 85%;
+	width: 100%;
+	align-content: center;
+}
+
+img {
+	width: 100%;
+	align-content: center;
+	padding-left: 100px;
+	padding-right: 100px;
+	height: 80%;
+	object-fit: contain;
 }
